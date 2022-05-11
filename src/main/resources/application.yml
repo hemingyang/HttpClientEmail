@@ -1,0 +1,19 @@
+server:
+  port: 80
+spring:
+  mail:
+    host:  smtp-mail.outlook.com      #smtp.qq.com  smtp.163.com  smtp.gmail.com   NQSIGCNTNBUJSMQS    egopqshofiuccacg  smtp.mail.yahoo.com  smtp-mail.outlook.com
+    username: hemingyangyang@outlook.com
+    password: outlookhmy79
+    properties:
+        mail:
+          smtp:
+            auth: true
+            starttls:
+              enable: true
+              required: true
+              servlet:
+                multipart:
+                  max-file-size: 500MB #限制单个文件大小
+                  max-request-size: 500MB #限制请求总量
+            writetimeout: 10000
